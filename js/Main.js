@@ -207,9 +207,6 @@ function gameInit (e) {
 		
 	/** 添加开始界面 */
 	addBeginningUI();
-		open_soft_keyboard({
-input: "#txtLogin"
-});
 	
 	//循环检测
 	stageLayer.addEventListener(LEvent.ENTER_FRAME, onFrame);
