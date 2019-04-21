@@ -49,6 +49,7 @@ var level;//游戏等级(显示的拼图块数为：level*level)
 var isOffGame; //是否在游戏中
 var userInfo_btn;
 var level_btn;
+var name;
 
 /** 游戏界面层 */
 var stageLayer;
@@ -707,7 +708,7 @@ function getLogButton(){
 	/** 开始游戏 */
 	btn.addEventListener(LMouseEvent.MOUSE_UP, function () {		    
 	addLogWindow();
-		
+	name.focus();	
 	//数据库连接
 	DBConn();		 
 	});
@@ -875,7 +876,7 @@ function addLogWindow(){
 	nameLabel.x = 80;
 	nameLabel.y = 70;
 	myWindow.layer.addChild(nameLabel);
-	var name = new LTextField();
+	name = new LTextField();
 	name.x = 150;
 	name.y = 70;
 	name.setWordWrap(true);
