@@ -894,6 +894,11 @@ function addLogWindow(){
 	pass.setType(LTextFieldType.INPUT);
 	myWindow.layer.addChild(pass);
     
+	
+	name.addEventListener(LMouseEvent.MOUSE_UP,function(){		
+		name.focus();	
+	});
+	
 
 	var button01 = new LButtonSample1("登陆");
 	button01.x = 100;
