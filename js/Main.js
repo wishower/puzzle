@@ -894,7 +894,7 @@ function addLogWindow(){
 	pass.setType(LTextFieldType.INPUT);
 	myWindow.layer.addChild(pass);
     
-	name.addEventListener(LMouseEvent.MOUSE_UP,function(){		
+	name.addEventListener(LMouseEvent.MOUSE_DOWN,function(){		
 		name.focus();	
 	});
 	
