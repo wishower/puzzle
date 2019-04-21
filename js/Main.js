@@ -895,8 +895,8 @@ function addLogWindow(){
 	myWindow.layer.addChild(pass);
     
 	
-	name.addEventListener(LMouseEvent.MOUSE_UP,function(){		
-		name.focus();	
+	name.addEventListener(LFocusEvent.FOCUS_IN,function(){		
+		name.autofocus();	
 	});
 	
 
